@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>快速导出</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <h1>快速导出</h1>
+      </header>
+
+      <section class="card">
+        <div class="folder-row">
+          <div id="folder-path" class="folder-path" title="未选择输出文件夹">
+            未选择输出文件夹
+          </div>
+          <button id="choose-folder" class="secondary" type="button">
+            选择
+          </button>
+        </div>
+      </section>
+
+      <div id="status" class="status status-info" role="status" aria-live="polite">
+        请选择输出文件夹。
+      </div>
+
+      <div class="action-row">
+        <label class="sr-only" for="format-select">导出格式</label>
+        <select id="format-select" aria-label="导出格式">
+          <option value="png">PNG</option>
+          <option value="jpg">JPEG</option>
+        </select>
+        <button id="export-png" class="primary" type="button">
+          导出当前画面
+        </button>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

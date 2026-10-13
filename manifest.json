@@ -1,0 +1,55 @@
+{
+  "manifestVersion": 5,
+  "id": "com.tuoyoo.quick-png-export",
+  "name": "快速导出",
+  "version": "1.0.2",
+  "main": "index.html",
+  "icons": [
+    {
+      "width": 48,
+      "height": 48,
+      "path": "icons/plugin.png",
+      "scale": [1, 2],
+      "theme": ["darkest", "dark", "medium", "lightest", "light"],
+      "species": ["pluginList"]
+    }
+  ],
+  "host": {
+    "app": "PS",
+    "minVersion": "23.3.0"
+  },
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "quickPngPanel",
+      "label": {
+        "default": "快速导出"
+      },
+      "minimumSize": {
+        "width": 280,
+        "height": 220
+      },
+      "preferredDockedSize": {
+        "width": 320,
+        "height": 230
+      },
+      "preferredFloatingSize": {
+        "width": 320,
+        "height": 220
+      },
+      "icons": [
+        {
+          "width": 23,
+          "height": 23,
+          "path": "icons/quick-export-toolbar-final.png",
+          "scale": [1, 2],
+          "theme": ["all"],
+          "species": ["generic"]
+        }
+      ]
+    }
+  ],
+  "requiredPermissions": {
+    "localFileSystem": "request"
+  }
+}

@@ -1,0 +1,4 @@
+output/
+website-quick-export.html
+tools/update_site.py
+tools/restore_release_manifest.py
